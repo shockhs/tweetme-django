@@ -1,0 +1,333 @@
+.actionButtons {
+  padding: 5px 0;
+  text-align: right;
+  padding-right: 25px;
+  width: 100px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #ea5455;
+  font-weight: 500;
+  background-color: #2d4059;
+}
+
+.actionButtons:hover {
+  color: #ffd460;
+}
+
+.retweetButton {
+  text-align: center;
+  padding-right: 0;
+  width: 100px;
+}
+
+.actionButtons + .actionButtons {
+  margin-left: 10px;
+}
+
+.tweetLink {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.formCreateTweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formCreateTweet textarea {
+  resize: none;
+}
+
+.createForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.createForm textarea {
+  width: 100%;
+  border: 2px solid #f1bb26;
+  outline: none;
+  padding: 5px 10px 5px 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right-width: 0;
+  -moz-appearance: none;
+  color: #f1bb26;
+  background-color: #2d4059;
+}
+
+.createForm button {
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #2d4059;
+  font-weight: bold;
+  color: #f1bb26;
+  border: 2px solid #f1bb26;
+}
+
+.tweets {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tweets-nextbutton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tweets-nextbutton button {
+  padding: 5px 0;
+  width: 250px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #2d4059;
+  font-weight: 500;
+  background-color: #ffd460;
+}
+
+.tweets-nextbutton button:hover {
+  background-color: #f1bb26;
+}
+
+.tweets__item + .tweets__item {
+  margin-bottom: 10px;
+}
+
+.tweets__parent, .tweets__item {
+  background-color: #f07b3f;
+  color: #2d4059;
+  border-radius: 15px;
+}
+
+.tweets__parent-header, .tweets__item-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.tweets__parent {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-rows: 45px 100px;
+      grid-template-rows: 45px 100px;
+}
+
+.tweets__parent-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 95%;
+      grid-template-columns: 5% 95%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ea5455;
+}
+
+.tweets__parent-header-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tweets__parent-header-avatar img {
+  vertical-align: bottom;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.tweets__parent-header-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweets__parent-header-link a {
+  text-decoration: none;
+  color: #2d4059;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tweets__parent-header-link-username {
+  color: #2d4059;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.tweets__parent-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweets__parent-content {
+  background-color: #f39a6d;
+  color: #2d4059;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px 5px;
+}
+
+.tweets__item {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  -ms-grid-rows: 60px 1fr 50px;
+      grid-template-rows: 60px 1fr 50px;
+}
+
+.tweets__item-header {
+  background-color: #ea5455;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 25% 70%;
+      grid-template-columns: 5% 25% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tweets__item-header-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tweets__item-header-avatar a {
+  text-decoration: none;
+}
+
+.tweets__item-header-avatar img {
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.tweets__item-header-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tweets__item-header-link a {
+  text-decoration: none;
+  color: #2d4059;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tweets__item-header-link span {
+  color: #2d4059;
+  font-size: 18px;
+}
+
+.tweets__item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.tweets__item-footer-counter {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ea5455;
+  font-weight: 700;
+  background-color: #2d4059;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #ea5455;
+}
+
+.tweets__item-footer a {
+  padding: 5px 0;
+  margin-right: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #ea5455;
+  font-weight: 500;
+  background-color: #2d4059;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tweets__item-footer a:hover {
+  color: #ffd460;
+}
+
+.tweets__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5px 10px 10px;
+}
+
+.tweets__item-content-retweet {
+  font-weight: 700;
+  color: #2d4059;
+}
+/*# sourceMappingURL=tweets.css.map */

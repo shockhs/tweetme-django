@@ -1,0 +1,149 @@
+.profile {
+  background-color: #f07b3f;
+  border-radius: 15px;
+  height: 20vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+}
+
+.profile__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__buttons button + button {
+  margin-top: 10px;
+}
+
+.profile__buttons button {
+  padding: 5px 0;
+  width: 150px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #ea5455;
+  font-weight: 500;
+  background-color: #2d4059;
+}
+
+.profile__buttons button:hover {
+  color: #ffd460;
+}
+
+.profile__badge {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+}
+
+.profile__badge__main {
+  background-color: #2d4059;
+  border-radius: 10px;
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile__badge__main-followers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 60px;
+}
+
+.profile__badge__main-followers-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__badge__main-followers-item span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #ea5455;
+  font-weight: 700;
+  background-color: #2d4059;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #ea5455;
+}
+
+.profile__badge__main-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile__badge__main-data-username {
+  margin-right: 10px;
+}
+
+.profile__badge__main-data-fullname {
+  color: #ea5455;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.profile__badge__main-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__badge__main-avatar img {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #2d4059;
+  border-radius: 45px;
+}
+/*# sourceMappingURL=profile.css.map */

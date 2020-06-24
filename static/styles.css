@@ -1,0 +1,50 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+img,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+header {
+  height: 10vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+.tweetcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__navbar ul {
+  list-style: none;
+  display: flex;
+}

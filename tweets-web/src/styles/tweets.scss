@@ -1,0 +1,241 @@
+.actionButtons {
+  padding: 5px 0;
+  text-align: right;
+  padding-right: 25px;
+  width: 100px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #ea5455;
+  font-weight: 500;
+  background-color: #2d4059;
+}
+
+.actionButtons:hover {
+  color: #ffd460;
+}
+
+.retweetButton {
+  text-align: center;
+  padding-right: 0;
+  width: 100px;
+}
+.actionButtons + .actionButtons {
+  margin-left: 10px;
+}
+
+.tweetLink {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.formCreateTweet {
+  display: flex;
+  textarea {
+    resize: none;
+  }
+}
+
+.createForm {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  margin-bottom: 20px;
+  textarea {
+    width: 100%;
+    border: 2px solid #f1bb26;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-width: 0;
+    -moz-appearance: none;
+    color: #f1bb26;
+    background-color: #2d4059;
+  }
+  button {
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #2d4059;
+    font-weight: bold;
+    color: #f1bb26;
+    border: 2px solid #f1bb26;
+  }
+}
+
+.tweets {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &-nextbutton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      padding: 5px 0;
+      width: 250px;
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 700;
+      margin-left: 10px;
+      color: #2d4059;
+      font-weight: 500;
+      background-color: #ffd460;
+    }
+    button:hover {
+      background-color: #f1bb26;
+    }
+  }
+  &__item + &__item {
+    margin-bottom: 10px;
+  }
+  &__parent,
+  &__item {
+    background-color: #f07b3f;
+    color: #2d4059;
+    border-radius: 15px;
+    &-header {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }
+  &__parent {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 45px 100px;
+    &-header {
+      display: grid;
+      grid-template-columns: 5% 95%;
+      align-items: center;
+      background-color: #ea5455;
+      &-avatar {
+        display: flex;
+        justify-content: center;
+        img {
+          vertical-align: bottom;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+      }
+      &-link {
+        display: flex;
+        a {
+          text-decoration: none;
+          color: #2d4059;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        &-username {
+          color: #2d4059;
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+    }
+    &-content {
+      background-color: #f39a6d;
+      color: #2d4059;
+      display: flex;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      padding: 10px 5px;
+    }
+  }
+  &__item {
+    display: grid;
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    grid-template-rows: 60px 1fr 50px;
+    &-header {
+      background-color: #ea5455;
+      display: grid;
+      grid-template-columns: 5% 25% 70%;
+      align-items: center;
+      &-avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          text-decoration: none;
+        }
+        img {
+          vertical-align: bottom;
+          margin: 0;
+          padding: 0;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+        }
+      }
+      &-link {
+        display: flex;
+        a {
+          text-decoration: none;
+          color: #2d4059;
+          font-weight: 700;
+          font-size: 18px;
+        }
+        span {
+          color: #2d4059;
+          font-size: 18px;
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      justify-content: space-between;
+      position: relative;
+      &-counter {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #ea5455;
+        font-weight: 700;
+        background-color: #2d4059;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #ea5455;
+      }
+      a {
+        padding: 5px 0;
+        margin-right: 10px;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        margin-left: 10px;
+        color: #ea5455;
+        font-weight: 500;
+        background-color: #2d4059;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      a:hover {
+        color: #ffd460;
+      }
+    }
+    &-content {
+      &-retweet {
+        font-weight: 700;
+        color: #2d4059;
+      }
+      display: flex;
+      padding: 10px 5px 10px 10px;
+    }
+  }
+}
